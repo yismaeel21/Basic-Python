@@ -1,0 +1,16 @@
+# hw7 problem 2
+#
+# Name(s): Yusuf Ismaeel, Eamon Brady
+#
+
+# This is a placeholder whose code you'll replace:
+00 read r1   #gets the number value from the user
+01 read r2   #gets the amount of times you want to run the code
+02 neg r2 r2    #I tried doing it the general way but it wouldn't work so I decided to negate it
+03 setn r3 1    #the base case for the power of zero
+04 jeqzn r2 08  #jumps to the write line if r2 is zero
+05 mul r3 r3 r1 #Multiplier Function!
+06 addn r2 1  #Increment
+07 jumpn 04  #Jumps back to check   
+08 write r3 #Prints the value we got
+09 halt     #This is the end of the code!

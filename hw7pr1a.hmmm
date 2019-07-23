@@ -1,0 +1,24 @@
+# hw7pr1a.hmmm is an example program that
+#   1) asks the user for an input
+#   2) counts up from that input
+#   3) keeps going and going...
+#
+# Name(s): Yusuf Ismaeel
+#
+
+# Lab task #1a: Change the above code to "the cubic countdown"
+# See the lab description for details
+
+00 read r1          # get # from user to r1
+01 mul r2 r1 r1       # sets r2 as the value of r1 squared
+02 mul r2 r2 r1         #resets the r3 value as r2 times r1 (r1 cubed)
+03 write r2         #prints out the cubed value of r1
+04 jgtzn r1 06      #checks if it's greater than zero and jumps to skip the case where it's less than zero
+05 jeqzn r1 08
+06 addn r1 -1
+07 jumpn 01        
+08 halt  # never halts! [use ctrl-c]
+
+
+# Lab task #1a: Change the above code to "the cubic countdown"
+# See the lab description for details

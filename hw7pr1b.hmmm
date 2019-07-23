@@ -1,0 +1,21 @@
+# hw7pr1b.hmmm will become a random-number generator
+#
+# Name(s): Yusuf Ismaeel
+
+# Lab task #2: Expand this to become your random-number generator:
+#   (Note: this is starter code that correctly handles the inputs...)
+
+00 read r1    # input a
+01 read r2    # input c
+02 read r3    # input m
+03 read r4    # input X_0
+04 read r5    # input 5
+05 neg r5 r5
+06 jeqzn r5 13
+07 mul r4 r1 r4
+08 add r4 r4 r2
+09 mod r4 r4 r3
+10 write r4
+11 addn r5 1
+12 jumpn 06
+13 halt

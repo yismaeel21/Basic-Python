@@ -1,0 +1,21 @@
+# hw7 problem 3
+#
+# Name(s): Yusuf Ismaeel
+#
+# Hmmm...
+#
+
+# This is a placeholder whose code you'll replace:
+00 read r1
+01 setn r2 1 #base case
+02 setn r3 1 #base case
+03 neg r1 r1 #negates r1 so I can increment and stop when equal to zero
+04 jeqzn r1 12 #jumps if the negation after increment (or before) is zero
+05 write r2 #writes every number
+06 copy r4 r3 #copies the value of r4 into register 3
+07 add r4 r4 r2 #adds the r4 value to begin the fibonacci sequence
+08 copy r2 r3   #sets r2's value as r3's
+09 copy r3 r4   #ditto for r3 and r4
+10 addn r1 1    #increment step
+11 jumpn 04 #jumps back to recurse
+12 halt
